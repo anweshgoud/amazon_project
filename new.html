@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input to DOM Example</title>
+</head>
+<body>
+    <input type="text" id="userInput">
+    <button id="submitBtn">Submit</button>
+    <div id="output"></div>
+
+    <script>
+        const userInput = document.querySelector("#userInput");
+        const output = document.querySelector("#output");
+        const submitBtn = document.querySelector("#submitBtn");
+
+        submitBtn.addEventListener("click", function () {
+            const inputValue = userInput.value;
+            output.innerHTML = `You entered: ${inputValue}`;
+        });
+    </script>
+</body>
+</html>

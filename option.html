@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Selected Value Example</title>
+    <style>
+        .option_class {
+            margin: 20px 0;
+        }
+
+        select, button {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .button-container {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="option_class">
+        <select class="js_cart_quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+    
+    <div class="button-container">
+        <button class="getSelectedValueButton">Get Selected Value 1</button>
+    </div>
+    
+    <div class="option_class">
+        <select class="js_cart_quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+    
+    <div class="button-container">
+        <button class="getSelectedValueButton">Get Selected Value 2</button>
+    </div>
+    
+    <script>
+        const selectElements = document.querySelectorAll(".js_cart_quantity");
+        const getSelectedValueButtons = document.querySelectorAll(".getSelectedValueButton");
+
+        getSelectedValueButtons.forEach((button, index) => {
+            button.addEventListener("click", function() {
+                const selectedValue = selectElements[index].value;
+                alert(`Selected value for button ${index + 1}: ${selectedValue}`);
+            });
+        });
+    </script>
+</body>
+</html>
