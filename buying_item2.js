@@ -172,7 +172,7 @@ document.querySelectorAll('.Delete-button').forEach((button)=>{
 })
 
 
-const total= dayjs();
+const total= dayjs().format('DD-MM-YYYY');
 console.log(total);
 
 
