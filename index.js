@@ -77,7 +77,6 @@ document.querySelectorAll('.js_button').forEach((button)=>{
 
         add_items(productname);
 
-
         cart_value();
 
     });

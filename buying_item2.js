@@ -139,6 +139,9 @@ function total_cost(){
 
     return TotalCost;
 
+    const total= dayjs();
+    console.log(total);
+
 
 
 
