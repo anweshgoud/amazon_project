@@ -139,11 +139,6 @@ function total_cost(){
 
     return TotalCost;
 
-    const total= dayjs();
-    console.log(total);
-
-
-
 
 }
 
@@ -175,5 +170,8 @@ document.querySelectorAll('.Delete-button').forEach((button)=>{
     
 })
 
+
+const total= dayjs();
+console.log(total);
 
 
